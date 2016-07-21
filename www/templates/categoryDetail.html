@@ -1,0 +1,64 @@
+<ion-view view-title="Detalle de Tiendas">
+    <ion-content ng-class="{expanded:isExpanded}">
+        <h3 style="text-align: center">{{category.name}}</h3>
+        
+            <div class="row" ng-repeat="shops in chunkedData">
+                  <div class="column" ng-repeat="shop in shops">
+                    <div class="card" >
+                        <!-- <div class="item item-divider"  >
+                            <ion-item  class="item item-thumbnail-left item-text-wrap" href="#/tab/dash/{{shop.id}}">
+
+                                <img ng-src="{{ shop.img }}">
+                                <h3 class="whiteColor text-right ratingAlignment" ><i class="icon ion-star"></i> {{shop.rating}}</h3>
+
+                                <h2 class="assertive item-text-wrap" style="font-weight: bold">{{shop.name}}</h2>
+                                <h5 class="whiteColor" ng-repeat="type in restaurant.type">{{ type }}</h5>
+                            </ion-item>
+                        </div>
+     -->
+                        <div class="item item-text-wrap" >
+
+                            <!-- <div class="item item-avatar">
+                                <img src="{{shop.img}}">
+                                
+                                
+                                <p>{{shop.deseg}}</p>
+                             </div>-->
+                            
+                            <div class="item item-body">
+                                <h2>{{shop.name}}</h2>
+                                <a href="#/app/shop/{{shop.id}}">
+                                <img class="full-image" src="{{shop.img}}" >
+                                </a>
+                                <p>
+                                    Category detail info
+                                </p>
+                                <p>
+                                    <a href="#" class="subdued">1 Like</a>
+                                    <a href="#" class="subdued">5 Comments</a>
+                                </p>
+                            <!-- </div> -->
+
+                                <div class="tabs tabs-dark tabs-icon-top static">
+                                    <a class="tab-item" href="#"> <i class="icon ion-thumbsup"></i> Like </a>
+                                    <a class="tab-item" href="#"> <i class="icon ion-chatbox"></i> Comment</a>
+                                    <a class="tab-item" href="#"> <i class="icon ion-share"></i>Share</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+            </div>
+        
+    </ion-content>
+<!-- 
+    <ion-infinite-scroll
+        on-infinite="loadMore()"
+        distance="1%">
+    </ion-infinite-scroll>
+ -->
+
+</ion-view>
