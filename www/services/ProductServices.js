@@ -3,6 +3,16 @@
 angular.module('starter.ProductServices', [])
 .factory('Products', function() {
 
+var str ="";
+for (var i = 1; i < 21; i++) {
+  str += '{ "id" :"'+i+'", "logoId" :"'+i+'", "name": "Producto '+i+'", "img":  "img/category/products/product'+i+'.jpg" },';
+}
+str += str +' { "id": "21","logoId": "21", "name": "Producto 21", "img": "img/category/products/product21.jpg" } ' ;
+
+var products = JSON.parse( "["+str +"]" );  
+
+/*
+
   var products = [{
     id: 0,
     name: 'Producto 0',
@@ -39,7 +49,7 @@ angular.module('starter.ProductServices', [])
     deseg: 'Diversion y Actividades',
     img: 'img/category/products/product5.jpg'
   }];
-
+*/
   return {
     all: function() {
       return products;
