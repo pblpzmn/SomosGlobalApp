@@ -2,7 +2,7 @@
 
 angular.module('starter.ProductServices', [])
 .factory('Products', function() {
-
+/*
 var str ="";
 for (var i = 1; i < 21; i++) {
   str += '{ "id" :"'+i+'", "logoId" :"'+i+'", "name": "Producto '+i+'", "img":  "img/category/products/product'+i+'.jpg" },';
@@ -10,46 +10,79 @@ for (var i = 1; i < 21; i++) {
 str += str +' { "id": "21","logoId": "21", "name": "Producto 21", "img": "img/category/products/product21.jpg" } ' ;
 
 var products = JSON.parse( "["+str +"]" );  
+*/
 
-/*
 
   var products = [{
-    id: 0,
-    name: 'Producto 0',
-    deseg: 'Comidas y Bebidas',
-    img: 'img/category/products/product0.jpg'
-  }
-  , {
     id: 1,
-    name: 'Producto 1',
-    deseg: 'Salud',
-    img: 'img/category/products/product1.jpg'
+    name: 'Bela Express',
+    logoId: '1',
+    catId: '2',
+    img1: 'img/category/products/BelaExpress1_2/imagen1.jpg',
+    img2: 'img/category/products/BelaExpress1_2/imagen2.jpg',
+    img3: 'img/category/products/BelaExpress1_2/imagen3.jpg'
   },
   {
-    id: 2,
-    name: 'Producto 2',
-    deseg: 'Belleza y Fitness',
-    img: 'img/category/products/product2.jpg'
-  },
-  {
-    id: 3,
-    name: 'Producto 3',
-    deseg: 'Compras',
-    img: 'img/category/products/product3.jpg'
+    id: 6,
+    name: 'Carolina Inn',
+    logoId: '6',
+    catId: '6',
+    img1: 'img/category/products/CarolinaInn6_6/imagen1.jpg',
+    img2: 'img/category/products/CarolinaInn6_6/imagen2.jpg',
+    img3: 'img/category/products/CarolinaInn6_6/imagen3.jpg'
   },
   {
     id: 4,
-    name: 'Producto 4',
-    deseg: 'Asistencia y Servicios',
-    img: 'img/category/products/product4.jpg'
-  },
+    name: 'Chakra',
+    logoId: '4',
+    catId: '1',
+    img1: 'img/category/products/Chakra4_1/imagen1.jpg',
+    img2: 'img/category/products/Chakra4_1/imagen2.jpg',
+    img3: 'img/category/products/Chakra4_1/imagen3.jpg'
+  }
+  ,
+  {
+    id: 20,
+    name: 'Clinica Primavera',
+    logoId: '20',
+    catId: '1',
+    img1: 'img/category/products/ClinicaPrimavera20_1/imagen1.jpg',
+    img2: 'img/category/products/ClinicaPrimavera20_1/imagen2.jpg',
+    img3: 'img/category/products/ClinicaPrimavera20_1/imagen3.jpg'
+  }
+  ,
+  {
+    id: 8,
+    name: 'DrCelular',
+    logoId: '8',
+    catId: '4',
+    img1: 'img/category/products/DrCelular8_4/imagen1.jpg',
+    img2: 'img/category/products/DrCelular8_4/imagen2.jpg',
+    img3: 'img/category/products/DrCelular8_4/imagen3.jpg'
+  }
+  ,
   {
     id: 5,
-    name: 'Producto 5',
-    deseg: 'Diversion y Actividades',
-    img: 'img/category/products/product5.jpg'
-  }];
-*/
+    name: 'Parrillon',
+    logoId: '5',
+    catId: '0',
+    img1: 'img/category/products/Parrillon5_0/imagen1.jpg',
+    img2: 'img/category/products/Parrillon5_0/imagen2.jpg',
+    img3: 'img/category/products/Parrillon5_0/imagen3.jpg'
+  }
+  ,
+  {
+    id: 17,
+    name: 'Chosen Bar',
+    logoId: '17',
+    catId: '0',
+    img1: 'img/category/products/ChosenBar17_0/imagen1.jpg',
+    img2: 'img/category/products/ChosenBar17_0/imagen2.jpg',
+    img3: 'img/category/products/ChosenBar17_0/imagen3.jpg'
+  }
+    
+  ];
+
   return {
     all: function() {
       return products;

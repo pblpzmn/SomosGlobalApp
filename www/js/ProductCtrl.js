@@ -18,6 +18,6 @@ console.log("product ctrl");
 
 	// $scope.chunkedData = chunk($scope.shops, 2);// to make 2 columns
 
-    // $scope.category = Categories.get($stateParams.catId);
-
+    $scope.product = Products.get($stateParams.shopId);
+console.log( $scope.product );
 })

@@ -1,7 +1,15 @@
 angular.module('starter.ShopCtrl', [])
 .controller('ShopCtrl', function($scope, $stateParams, $timeout,  Shops, Categories) {
 
-	$scope.shops = Shops.all();
+	$scope.allShops = Shops.all();
+	console.log($scope.allShops);
+	$scope.shops = [];
+	for (var i = 0; i < $scope.allShops.length; i++) {
+		if ($scope.allShops[i].catId === $stateParams.catId) {
+		  $scope.shops.push( $scope.allShops[i] ) ;
+		}
+	}
+    
 	console.log($scope.shops);
 	console.log($stateParams.shopId);
 	if ($stateParams.shopId != undefined){
